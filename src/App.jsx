@@ -187,8 +187,10 @@ const App = () => {
                   <Button
                     key={i}
                     buttonType={
-                      input === "="
+                      input === "=" 
                         ? BUTTON_TYPE_CLASSES.operation
+                        : input === "C"
+                        ? BUTTON_TYPE_CLASSES.reset
                         : BUTTON_TYPE_CLASSES.base
                     }
                     value={input}

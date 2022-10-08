@@ -22,9 +22,24 @@ export const BaseButton = styled.button`
 export const OperationButton = styled(BaseButton)`
   background-color: #4285f4;
   color: white;
+  grid-column: span 2;
 
   &:hover {
     background-color: #357ae8;
+    border: none;
+  }
+`;
+
+export const ResetButton = styled(BaseButton)`
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  grid-column: span 2;
+
+
+  &:hover {
+    background-color: black;
+    color: white;
     border: none;
   }
 `;
